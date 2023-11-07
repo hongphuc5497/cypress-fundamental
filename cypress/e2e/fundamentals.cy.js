@@ -1,7 +1,9 @@
 describe('Fundemental test', () => {
-	it('Contains correct header text', () => {
+	beforeEach(() => {
 		cy.visit('/fundamentals');
+	});
 
+	it('Contains correct header text', () => {
 		// 1st approach
 		// cy.get('h1').should('have.text', 'Testing Fundamentals');
 
@@ -14,9 +16,7 @@ describe('Fundemental test', () => {
 		);
 	});
 
-	it.only('Accordion testing', () => {
-		cy.visit('/fundamentals');
-
+	it('Accordion testing', () => {
 		const testText =
 			'The second is a callback function for your actually tests within that block';
 
