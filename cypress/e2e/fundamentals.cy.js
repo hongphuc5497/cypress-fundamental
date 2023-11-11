@@ -10,7 +10,7 @@ describe('Fundemental test', () => {
 		// 2nd approach
 		// cy.get('[data-test="fundamentals-header"]').contains(/Testing Fundamentals/i);
 		// cy.get('[data-test="fundamentals-header"]').contains("Testing Fundamentals");
-		cy.get('[data-test="fundamentals-header"]').should(
+    cy.getDataTest('fundamentals-header').should(
 			'contain.text',
 			'Testing Fundamentals'
 		);

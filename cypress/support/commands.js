@@ -19,6 +19,11 @@
 //
 // -- This is a dual command --
 // Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
+
+Cypress.Commands.add('getDataTest', (dataTestSelector) => {
+  return cy.get(`[data-test="${dataTestSelector}"]`);
+})
+
 //
 //
 // -- This will overwrite an existing command --

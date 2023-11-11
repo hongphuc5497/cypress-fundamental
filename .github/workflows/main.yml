@@ -19,7 +19,6 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v3
         with:
-          spec: cypress/e2e/fundamentals.cy.cy.js
           browser: chrome
           record: true
           parallel: true
